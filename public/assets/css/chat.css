@@ -1,0 +1,110 @@
+.container {
+    margin: auto;
+    padding: 10px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    grid-template-columns: 1fr 3fr 1fr; /* Memperlebar chat area */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.chat-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.message-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message.text-right {
+    align-items: flex-end;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-light {
+    background-color: #f1f1f1 !important;
+}
+
+.message p {
+    margin: 0;
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+.message strong {
+    font-weight: bold;
+}
+
+.message small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.message-input {
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+input.form-control {
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+button.btn-primary {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 50px;
+}
+
+/* Bar untuk nama pengguna */
+.chat-header {
+    background-color: #366389;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.chat-header .user-name {
+    flex: 1;
+}
+
+.chat-header .close-button {
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.chat-header .close-button:hover {
+    color: #cccccc;
+}
+

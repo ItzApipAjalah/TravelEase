@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #f4f4f4;
+}
+
+.d-flex {
+    display: flex;
+    min-height: 100vh; /* Sidebar & content fill the screen vertically */
+  }
+  
+  .sidebar {
+    background-color: white;
+    width: 250px; /* Initial width of the sidebar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    transition: width 0.3s;
+  }
+  
+  .sidebar.collapsed {
+    width: 80px; /* Sidebar width when collapsed */
+  }
+  
+  .content {
+    flex-grow: 1; /* Ensures content takes up remaining space */
+    
+     }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #6c757d;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link.active {
+    color: #366389;
+    border-color: #366389;
+  }
+  
+  .nav-link span {
+    margin-left: 10px;
+  }
+  
+  .sidebar.collapsed .nav-link span {
+    display: none; /* Hide text when sidebar is collapsed */
+  }
+  
+  .sidebar img {
+    width: 130px; /* Logo size when sidebar is expanded */
+    height: auto;
+    margin-bottom: 20px;
+    transition: width 0.3s;
+  }
+  
+  .sidebar.collapsed img {
+    width: 50px; /* Logo size when sidebar is collapsed */
+  }
+  
+  .toggleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #dc3545; /* Warna merah */
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Warna merah lebih gelap untuk efek hover */
+  color: #ffffff;
+}
+
+.logout-button i.icon {
+  margin-right: 8px; /* Jarak antara ikon dan teks */
+  font-size: 16px;
+}
+
+.logout-button span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Gaya untuk modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Warna latar belakang semi-transparan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Gaya untuk konten modal */
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol dalam modal */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-confirm, .btn-cancel {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-confirm {
+  background-color: #dc3545; /* Warna tombol konfirmasi */
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #6c757d; /* Warna tombol batal */
+  color: white;
+}
+
+.btn-confirm:hover {
+  background-color: #c82333; /* Warna tombol konfirmasi saat hover */
+}
+
+.btn-cancel:hover {
+  background-color: #5a6268; /* Warna tombol batal saat hover */
+}
+
+/* .main_container {
+  padding: 20px;
+  background-color: #366489;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+/* .navbar_content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+
+/* .navbar_content i {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+} */
