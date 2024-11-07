@@ -18,7 +18,7 @@ class SettingController extends Controller
                 $layout = 'layouts.officer.sidebar';
             }
         }
-    
+
         // Get the authenticated user
         $user = Auth::user();
 
